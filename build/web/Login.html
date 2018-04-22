@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TOBA Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="New_customer.jsp">Register</a></li>
+        </ul>
+        
+        <h1>Welcome to Titan Online Banking</h1>
+        
+        <form action="LoginServlet" method="post">
+            <input type="hidden" name="action" value="add">
+            <label>User Name:</label>
+            <input type="text" name="userName" required><br>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Not a registered member?</h2>
+        <h3><a href="New_customer.jsp">Sign Up Now!</a></h3>
+        
+        <h4><a href="password_reset.jsp">Reset Password</a></h4>
+       
+    </body>
+</html>
